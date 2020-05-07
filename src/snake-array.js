@@ -1,5 +1,5 @@
 const snakeArray = () => {
-    return null;
+    // Your implementation here
 }
 
 module.exports = snakeArray
