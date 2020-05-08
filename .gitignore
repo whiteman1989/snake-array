@@ -1,10 +1,2 @@
-# dependencies
-/node_modules
-
-*.log
-
-junit.xml
-
-*-lock.json
-
-.idea
+node_modules
+*.xml
