@@ -1,4 +1,4 @@
-const snakeArray = () => {
+const snakeArray = (snakeStart) => {
     // Implementation here
     return;
 }

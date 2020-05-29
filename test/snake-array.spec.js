@@ -1,6 +1,6 @@
 const snakeArray = require('../src/snake-array');
 
-const snakeMatrix = [
+const snakeMatrix1 = [
     [1, 2, 3, 4, 5, 6, 7],
     [22, 23, 24, 25, 26, 27, 8],
     [21, 36, 37, 38, 39, 28, 9],
@@ -9,12 +9,11 @@ const snakeMatrix = [
     [18, 17, 16, 15, 14, 13, 12]
 ];
 
-const result = snakeArray()
-
-
 describe('snakeArray function', () => {
     it('Should return two-dimensional array with a spiral snake pattern', () => {
-        expect(result).to.deep.equal(snakeMatrix)
+        expect(snakeArray(1)).to.deep.equal(snakeMatrix1)
+    });
+    it('Result should be typeof Array.', () => {
+        expect(snakeArray(1)).to.be.an('array')
     });
 })
-
