@@ -16,4 +16,13 @@ describe('snakeArray function', () => {
     it('Result should be typeof Array.', () => {
         expect(snakeArray(1)).to.be.an('array')
     });
+    it('Array should have 6 rows.', () => {
+        expect(snakeArray(1).length).to.equal(6)
+    });
+    it('Each row should have 7 columns.', () => {
+        const result = snakeArray(1);
+        for (let i = 0; i < result.length; i++) {
+            expect(result[i].length).to.equal(7)
+        }    
+    });
 })
