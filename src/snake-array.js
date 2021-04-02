@@ -2,13 +2,13 @@ const snakeArray = (snakeStart) => {
     const columns = 7;
     const rows = 6;
 
-    //init matrix
-    const matrix = Array(rows).fill().map(()=>[]);
-    
     let horizontalMin = 0;
     let horizontalMax = columns-1;
     let verticalMin = 0;
     let verticalMax = rows-1;
+
+    //init matrix
+    const matrix = Array(rows).fill().map(()=>[]);
 
     while (horizontalMin <= horizontalMax && verticalMin <= verticalMax) {
         // Horizontal forward
